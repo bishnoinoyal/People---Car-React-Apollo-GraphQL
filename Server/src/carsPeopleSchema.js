@@ -4,125 +4,95 @@ import remove from 'lodash.remove'
 const people = [
   {
     id: '1',
-    firstName: 'Noyal',
-    lastName: 'Godara'
+    firstName: 'Bill',
+    lastName: 'Gates'
   },
   {
     id: '2',
-    firstName: 'Anshuma',
-    lastName: 'Yadav'
+    firstName: 'Steve',
+    lastName: 'Jobs'
   },
   {
     id: '3',
-    firstName: 'Neeraj',
-    lastName: 'Goyal'
-  },
-  {
-    id: '4',
-    firstName: 'Harsh',
-    lastName: 'Kaushik'
-  },
+    firstName: 'Linux',
+    lastName: 'Torvalds'
+  }
 ]
 
 const cars = [
   {
     id: '1',
     year: '2019',
-    make: 'Honda',
-    model: 'Accord',
-    price: '38000',
+    make: 'Toyota',
+    model: 'Corolla',
+    price: '40000',
     personId: '1'
   },
   {
     id: '2',
-    year: '2012',
-    make: 'Toyota',
-    model: 'Supra',
-    price: '123000',
+    year: '2018',
+    make: 'Lexus',
+    model: 'LX 600',
+    price: '13000',
     personId: '1'
   },
   {
     id: '3',
-    year: '2024',
+    year: '2017',
     make: 'Honda',
-    model: 'Accord',
-    price: '50000',
+    model: 'Civic',
+    price: '20000',
     personId: '1'
   },
   {
     id: '4',
-    year: '2012',
-    make: 'Lexus ',
-    model: 'RX 500h',
-    price: '81100',
+    year: '2019',
+    make: 'Acura ',
+    model: 'MDX',
+    price: '60000',
     personId: '2'
   },
   {
     id: '5',
-    year: '1968',
+    year: '2018',
     make: 'Ford',
-    model: 'Mustang',
-    price: '42000',
+    model: 'Focus',
+    price: '35000',
     personId: '2'
   },
   {
     id: '6',
-    year: '2023',
-    make: 'Dodge',
-    model: 'Challender SRT Hellcat Redeye W-Body Jailbreak',
-    price: '130000',
+    year: '2017',
+    make: 'Honda',
+    model: 'Pilot',
+    price: '45000',
     personId: '2'
   },
   {
     id: '7',
-    year: '2023',
-    make: 'Cadillac',
-    model: 'CT5-V Blackwing',
-    price: '121000',
+    year: '2019',
+    make: 'Volkswagen',
+    model: 'Golf',
+    price: '40000',
     personId: '3'
   },
   {
     id: '8',
-    year: '2023',
-    make: 'Aston Martin',
-    model: 'Vantage V8 Roadster',
-    price: '150000',
+    year: '2018',
+    make: 'Kia',
+    model: 'Sorento',
+    price: '45000',
     personId: '3'
   },
   {
     id: '9',
-    year: '2023',
-    make: 'Ford',
-    model: 'Mustang Shelby GT500',
-    price: '240000',
+    year: '2017',
+    make: 'Volvo',
+    model: 'XC40',
+    price: '55000',
     personId: '3'
-  },
-  {
-    id: '10',
-    year: '2023',
-    make: 'Mercedes-AMG',
-    model: 'E63 S',
-    price: '130000',
-    personId: '4'
-  },
-  {
-    id: '11',
-    year: '2023',
-    make: 'Nissan',
-    model: 'GT-R',
-    price: '160000',
-    personId: '4'
-  },
-  {
-    id: '12',
-    year: '2023',
-    make: 'Brabus - Mercedes',
-    model: 'G-63 AMG',
-    price: '500000',
-    personId: '4'
-  },
+  }
 ]
-
 const typeDefs = `
   type Person {
     id: String!
