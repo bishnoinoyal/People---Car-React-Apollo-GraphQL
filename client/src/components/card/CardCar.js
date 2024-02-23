@@ -13,7 +13,7 @@ const CardCar = ({ id, firstName, lastName, car }) => {
   };
 
   return (
-    <div>
+    <>
       {editMode ? (
         <CarUpdate
           id={car.id}
@@ -26,7 +26,7 @@ const CardCar = ({ id, firstName, lastName, car }) => {
         />
       ) : (
         <Card
-          style={{ ...styles.card, border: "1px solid #d3d3d3", borderRadius: 0 }}
+          style={{ ...styles.card}}
           actions={[
             <EditOutlined key="edit" onClick={handleButtonClick} />,
             <RemoveCar id={car.id} />,
@@ -37,15 +37,19 @@ const CardCar = ({ id, firstName, lastName, car }) => {
           </p>
         </Card>
       )}
-    </div>
+    </>
   );
 };
 
 const getStyles = () => ({
   card: {
-    width: "1000px",
     padding: "0px",
+    border: "1px solid #d3d3d3", 
+    borderRadius: 0, 
+    width: "100%", 
+    margin: "10px"
   },
+
 });
 
 export default CardCar;

@@ -15,7 +15,7 @@ const CardContact = ({ id, firstName, lastName, cars }) => {
   };
 
   return (
-    <div>
+    <>
       {editMode ? (
         <ContactUpdate
           id={id}
@@ -47,13 +47,13 @@ const CardContact = ({ id, firstName, lastName, cars }) => {
           )}
         </Card>
       )}
-    </div>
+    </>
   );
 };
 
 const getStyles = () => ({
   card: {
-    width: '100%',
+    width: 'auto',
     margin: '0px',
     border: '1px solid grey'
   },
