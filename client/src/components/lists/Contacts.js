@@ -24,9 +24,7 @@ const Contacts = () => {
 
 const getStyles = () => ({
   list: {
-    display: 'flex',
-    justifyContent: 'center',
-    width: '500px'
+    width: '90%',
   },
 });
 

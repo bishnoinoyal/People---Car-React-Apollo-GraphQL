@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { Card } from 'antd';
-import { EditOutlined } from '@ant-design/icons';
-import CarUpdate from '../forms/CarUpdate';
-import RemoveCar from '../buttons/RemoveCar';
+import { useState } from "react";
+import { Card } from "antd";
+import { EditOutlined } from "@ant-design/icons";
+import CarUpdate from "../forms/CarUpdate";
+import RemoveCar from "../buttons/RemoveCar";
 
 const CardCar = ({ id, firstName, lastName, car }) => {
   const [editMode, setEditMode] = useState(false);
@@ -26,13 +26,15 @@ const CardCar = ({ id, firstName, lastName, car }) => {
         />
       ) : (
         <Card
-        style={{ ...styles.card, border: '1px solid grey' }}
-        actions={[
-            <EditOutlined key='edit' onClick={handleButtonClick} />,
+          style={{ ...styles.card, border: "1px solid #d3d3d3", borderRadius: 0 }}
+          actions={[
+            <EditOutlined key="edit" onClick={handleButtonClick} />,
             <RemoveCar id={car.id} />,
           ]}
         >
-          <p>{car.year} {car.make} {car.model} -- ${car.price} </p>
+          <p>
+            {car.year} {car.make} {car.model} -- ${car.price}{" "}
+          </p>
         </Card>
       )}
     </div>
@@ -41,12 +43,9 @@ const CardCar = ({ id, firstName, lastName, car }) => {
 
 const getStyles = () => ({
   card: {
-    width: '1000px',
-    padding: '0px'
+    width: "1000px",
+    padding: "0px",
   },
 });
-
-
-
 
 export default CardCar;

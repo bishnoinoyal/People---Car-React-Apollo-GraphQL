@@ -53,7 +53,9 @@ const CardContact = ({ id, firstName, lastName, cars }) => {
 
 const getStyles = () => ({
   card: {
-    width: '1000px',
+    width: '100%',
+    margin: '0px',
+    border: '1px solid grey'
   },
 });
 

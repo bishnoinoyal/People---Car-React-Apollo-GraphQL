@@ -7,7 +7,8 @@ const Title = ({text = "PEOPLE AND THEIR CARS"}) => {
     title: {
       fontSize: 20,
       padding: '15px',
-      marginBottom: '50px'
+      marginBottom: '50px',
+      fontWeight: 'normal',
     }
   })
   
