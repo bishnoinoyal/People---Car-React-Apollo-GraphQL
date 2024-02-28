@@ -36,7 +36,7 @@ const CardContact = ({ id, firstName, lastName, cars }) => {
             dataSource={cars}
             renderItem={car => (
               <List.Item key={car.id}>
-                <CardCar id={car.id} car={car} />
+                <CardCar id={id} car={car} />
               </List.Item>
             )}
           />
